@@ -42,6 +42,7 @@ body{
 .player1Head{
     border: 5px solid rgb(214, 212, 212);
     height: 50px;
+    width: 50%;
     text-align: center;
     background-color: rgb(233, 231, 231) ;
     margin-bottom: 100px;
@@ -49,26 +50,27 @@ body{
 .player2Head{
     border: 5px solid rgb(214, 212, 212);
     height: 50px;
+    width: 50%;
     text-align: center;
     background-color: rgb(233, 231, 231);
     margin-bottom: 100px;
 }
 .player1CircleScore{
-    border: 5px solid rgb(214, 212, 212);
-    height: 150px;
-    width: 150px;
+    border: 10px solid rgb(214, 212, 212);
+    height: 300px;
+    width: 300px;
     text-align: center;
-    padding-top: 40px;
+    padding-top: 110px;
     background-color: rgb(233, 231, 231);
     font-size: 4em;
     border-radius: 50%;
 }
 .player2CircleScore{
-    border: 5px solid rgb(214, 212, 212);
-    height: 150px;
-    width: 150px;
+    border: 10px solid rgb(214, 212, 212);
+    height: 300px;
+    width: 300px;
     text-align: center;
-    padding-top: 40px;
+    padding-top: 110px;
     background-color: rgb(233, 231, 231);
     font-size: 4em;
     border-radius: 50%;
