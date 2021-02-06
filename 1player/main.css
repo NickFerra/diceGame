@@ -4,7 +4,30 @@
 }
 
 body{
-    background: linear-gradient(to bottom left, rgb(247, 115, 115), rgb(255, 231, 96)) fixed;
+    background: linear-gradient(to bottom left, rgb(128, 128, 128), rgb(255, 254, 254)) fixed;
     background-repeat:no-repeat;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+.bigBox{
+    border: 15px solid rgb(102, 100, 100);
+    width: 80%;
+    height: 800px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    
+}
+.player1Box{
+    border: 10px solid #552626;
+    width: 50%;
+    margin: 10px 10px;
+    background-color: #552626;
+}
+.player2Box{
+    border: 10px solid #552626;
+    width: 50%;
+    margin: 10px 10px;
+    background-color: #552626;
 }
