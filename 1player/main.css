@@ -4,7 +4,52 @@
 }
 
 body{
-    background: linear-gradient(to bottom left, rgb(247, 115, 115), rgb(255, 231, 96)) fixed;
+    background: linear-gradient(to bottom left, rgb(128, 128, 128), rgb(150, 100, 100)) fixed;
     background-repeat:no-repeat;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+.bigBox{
+    border: 15px solid rgb(233, 231, 231);
+    width: 80%;
+    height: 800px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    
+}
+.player1Box{
+    border: 10px solid #552626;
+    width: 50%;
+    margin: 10px 10px;
+    background-color: #552626;
+}
+.player2Box{
+    border: 10px solid #552626;
+    width: 50%;
+    margin: 10px 10px;
+    background-color: #552626;
+}
+.player1Head{
+    border: 5px solid rgb(214, 212, 212);
+    height: 50px;
+    text-align: center;
+    background-color: rgb(233, 231, 231) ;
+    margin-bottom: 100px;
+}
+.player2Head{
+    border: 5px solid rgb(214, 212, 212);
+    height: 50px;
+    text-align: center;
+    background-color: rgb(233, 231, 231);
+    margin-bottom: 100px;
+}
+.player1CircleScore{
+    border: 5px solid rgb(214, 212, 212);
+    height: 20px;
+}
+.player2CircleScore{
+    border: 5px solid rgb(214, 212, 212);
+    height: 20px;
 }
