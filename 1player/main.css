@@ -17,7 +17,7 @@ body{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    
+    margin-top: 20px;
 }
 .player1Box{
     border: 10px solid #552626;
