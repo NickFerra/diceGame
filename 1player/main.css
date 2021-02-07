@@ -78,7 +78,11 @@ body{
 .invisible{
     display:none;
 }
-.playerReset1{
-    display:flex;
-    justify-content:flex-end;
+.playerReset1 {
+    display: flex;
+    justify-content: flex-end;
+    border: 5px solid #552626;
+}
+.player1Roll:hover, .player1Nextplayer:hover, .player2Roll:hover, .player2Nextplayer:hover, .player1Reset:hover {
+    background-color: #ba2d2d;
 }
