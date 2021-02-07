@@ -56,4 +56,8 @@ const player1Reset = document.querySelector(".player1Reset");
 
 player1Reset.addEventListener("click", () => {
     diceNum.textContent = "0";
+    diceNum2.textContent = "0";
+
+    player1Roll.classList.remove("invisible");
+    player2Roll.classList.remove("invisible");
 })

@@ -78,3 +78,7 @@ body{
 .invisible{
     display:none;
 }
+.playerReset1{
+    display:flex;
+    justify-content:flex-end;
+}
