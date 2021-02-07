@@ -27,3 +27,23 @@ player2Roll.addEventListener("click", () => {
         alert("Player TWO you have lost");
     }
 })
+
+const player1Next = document.querySelector(".player1Nextplayer");
+const player2Next = document.querySelector(".player2Nextplayer");
+
+player1Next.addEventListener("click", () => {
+    player1Roll.classList.add("invisible");
+})
+
+player2Next.addEventListener("click", () => {
+    player2Roll.classList.add("invisible");
+    if (randNum == randNum2) {
+        alert("ITS A DRAW");
+    }
+    else if (randNum > randNum2) {
+        alert("PLAYER ONE HAS WON");
+    }
+    else if (randNum < randNum2) {
+        alert("PLAYER TWO HAS WON");
+    }
+})
