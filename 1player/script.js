@@ -28,13 +28,16 @@ player2Roll.addEventListener("click", () => {
     }
 })
 
+//sorting the hold button
 const player1Next = document.querySelector(".player1Nextplayer");
 const player2Next = document.querySelector(".player2Nextplayer");
 
+//player 1 hold button to make roll invis
 player1Next.addEventListener("click", () => {
     player1Roll.classList.add("invisible");
 })
 
+//player 2 hold button makes invis and check winner based on score
 player2Next.addEventListener("click", () => {
     player2Roll.classList.add("invisible");
     if (randNum == randNum2) {
@@ -46,4 +49,11 @@ player2Next.addEventListener("click", () => {
     else if (randNum < randNum2) {
         alert("PLAYER TWO HAS WON");
     }
+})
+
+//sorting reset button
+const player1Reset = document.querySelector(".player1Reset");
+
+player1Reset.addEventListener("click", () => {
+    diceNum.textContent = "0";
 })
