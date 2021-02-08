@@ -92,4 +92,9 @@ player1Reset.addEventListener("click", () => {
     //showing the roll buttons again
     player1Roll.classList.remove("invisible");
     player2Roll.classList.remove("invisible");
+
+    randNum = 0;
+    randNum2 = 0;
+    diceNum.textContent = randNum;
+    diceNum2.textContent = randNum2;
 });
