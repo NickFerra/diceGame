@@ -51,16 +51,6 @@ player2Next.addEventListener("click", () => {
     }
 })
 
-//sorting reset button
-const player1Reset = document.querySelector(".player1Reset");
-
-player1Reset.addEventListener("click", () => {
-    diceNum.textContent = 0;
-    diceNum2.textContent = 0;
-
-    player1Roll.classList.remove("invisible");
-    player2Roll.classList.remove("invisible");
-});
 
 //main page buttons
 //selecting one player
@@ -88,3 +78,11 @@ select2.addEventListener("click", () => {
     playerSelector.classList.add("invisible");
     player2Box.classList.remove("invisible");
 })
+
+//sorting reset button
+const player1Reset = document.querySelector(".player1Reset");
+
+player1Reset.addEventListener("click", () => {
+    bigBox.classList.add("invisible");
+    playerSelector.classList.remove("invisible");
+});
