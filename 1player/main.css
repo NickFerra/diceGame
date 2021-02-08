@@ -9,6 +9,7 @@ body{
     background-size: cover;
     display: flex;
     justify-content: center;
+    position: relative;
 }
 .bigBox{
     border: 15px solid rgb(233, 231, 231);
@@ -75,14 +76,35 @@ body{
     font-size: 4em;
     border-radius: 50%;
 }
-.invisible{
-    display:none;
-}
 .playerReset1 {
     display: flex;
     justify-content: flex-end;
     border: 5px solid #552626;
 }
-.player1Roll:hover, .player1Nextplayer:hover, .player2Roll:hover, .player2Nextplayer:hover, .player1Reset:hover {
+.player1Roll:hover, .player1Nextplayer:hover, .player2Roll:hover, .player2Nextplayer:hover, .player1Reset:hover, .select1Player:hover, .select2Player:hover {
     background-color: #ba2d2d;
+}
+.playerSelector{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    position: absolute;
+    text-align: center;
+    border: 15px solid rgb(233, 231, 231);
+    width: 80%;
+    height: 300px;
+    margin-top: 10%;
+    padding-top: 20px;
+    background-color: #552626;
+    color: rgb(233, 231, 231);
+}
+.selectButton h2{
+    padding: 15px;
+}
+.select1Player{
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.invisible{
+    display:none;
 }

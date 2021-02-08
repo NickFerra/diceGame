@@ -51,13 +51,45 @@ player2Next.addEventListener("click", () => {
     }
 })
 
+
+//main page buttons
+//selecting one player
+const select1 = document.querySelector(".select1Player");
+const player1Box = document.querySelector(".player1Box", ".invisible");
+const bigBox = document.querySelector(".bigBox", ".invisible");
+const playerSelector = document.querySelector(".playerSelector");
+const playerResetButtonShow = document.querySelector(".playerReset1", ".invisible")
+
+select1.addEventListener("click", () => {
+    player1Box.classList.remove("invisible");
+    bigBox.classList.remove("invisible");
+    playerResetButtonShow.classList.remove("invisible");
+    playerSelector.classList.add("invisible");
+})
+
+//selecting two players
+const select2 = document.querySelector(".select2Player");
+const player2Box = document.querySelector(".player2Box", ".invisible");
+
+select2.addEventListener("click", () => {
+    player1Box.classList.remove("invisible");
+    bigBox.classList.remove("invisible");
+    playerResetButtonShow.classList.remove("invisible");
+    playerSelector.classList.add("invisible");
+    player2Box.classList.remove("invisible");
+})
+
 //sorting reset button
 const player1Reset = document.querySelector(".player1Reset");
 
 player1Reset.addEventListener("click", () => {
-    diceNum.textContent = "0";
-    diceNum2.textContent = "0";
+    bigBox.classList.add("invisible");
+    playerSelector.classList.remove("invisible");
+    player2Box.classList.add("invisible");
+    playerResetButtonShow.classList.add("invisible");
+    player1Box.classList.add("invisible");
 
+    //showing the roll buttons again
     player1Roll.classList.remove("invisible");
     player2Roll.classList.remove("invisible");
-})
+});
