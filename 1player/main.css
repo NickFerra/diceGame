@@ -76,9 +76,6 @@ body{
     font-size: 4em;
     border-radius: 50%;
 }
-.invisible{
-    display:none;
-}
 .playerReset1 {
     display: flex;
     justify-content: flex-end;
@@ -107,4 +104,7 @@ body{
 .select1Player{
     margin-top: 10px;
     margin-right: 20px;
+}
+.invisible{
+    display:none;
 }

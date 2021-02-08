@@ -55,17 +55,23 @@ player2Next.addEventListener("click", () => {
 const player1Reset = document.querySelector(".player1Reset");
 
 player1Reset.addEventListener("click", () => {
-    diceNum.textContent = "0";
-    diceNum2.textContent = "0";
+    diceNum.textContent = 0;
+    diceNum2.textContent = 0;
 
     player1Roll.classList.remove("invisible");
     player2Roll.classList.remove("invisible");
-})
+});
 
 //main page buttons
 const select1 = document.querySelector(".select1Player");
-const player1Box = document.querySelector(".player1Box");
+const player1Box = document.querySelector(".player1Box", ".invisible");
+const bigBox = document.querySelector(".bigBox", ".invisible");
+const playerSelector = document.querySelector(".playerSelector");
+const playerResetButtonShow = document.querySelector(".playerReset1", ".invisible")
 
 select1.addEventListener("click", () => {
     player1Box.classList.remove("invisible");
+    bigBox.classList.remove("invisible");
+    playerResetButtonShow.classList.remove("invisible");
+    playerSelector.classList.add("invisible");
 })
