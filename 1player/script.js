@@ -8,13 +8,16 @@ var randNum2 = 0;
 
 // rolling the dice player1
 player1Roll.addEventListener("click", () => {
-
-        randNum += Math.floor(Math.random() * 6) +1;
+var diceRollNow = Math.floor(Math.random() * 6) +1;
+        randNum += diceRollNow;
         diceNum.textContent = randNum;
         
         if(randNum >= "21"){
             alert("Player ONE you have lost");
         }
+
+        document.querySelector("#diceImage").src = "img/dice" + diceRollNow + ".png";
+
 })
 
 // rolling the dice player2
