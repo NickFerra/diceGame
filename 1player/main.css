@@ -19,6 +19,7 @@ body{
     justify-content: center;
     flex-direction: row;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 .player1Box{
     border: 10px solid #552626;
