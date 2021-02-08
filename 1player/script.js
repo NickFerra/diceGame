@@ -63,6 +63,7 @@ player1Reset.addEventListener("click", () => {
 });
 
 //main page buttons
+//selecting one player
 const select1 = document.querySelector(".select1Player");
 const player1Box = document.querySelector(".player1Box", ".invisible");
 const bigBox = document.querySelector(".bigBox", ".invisible");
@@ -74,4 +75,16 @@ select1.addEventListener("click", () => {
     bigBox.classList.remove("invisible");
     playerResetButtonShow.classList.remove("invisible");
     playerSelector.classList.add("invisible");
+})
+
+//selecting two players
+const select2 = document.querySelector(".select2Player");
+const player2Box = document.querySelector(".player2Box", ".invisible");
+
+select2.addEventListener("click", () => {
+    player1Box.classList.remove("invisible");
+    bigBox.classList.remove("invisible");
+    playerResetButtonShow.classList.remove("invisible");
+    playerSelector.classList.add("invisible");
+    player2Box.classList.remove("invisible");
 })
