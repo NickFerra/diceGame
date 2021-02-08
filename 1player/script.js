@@ -85,4 +85,7 @@ const player1Reset = document.querySelector(".player1Reset");
 player1Reset.addEventListener("click", () => {
     bigBox.classList.add("invisible");
     playerSelector.classList.remove("invisible");
+    player2Box.classList.add("invisible");
+    playerResetButtonShow.classList.add("invisible");
+    player1Box.classList.add("invisible");
 });
