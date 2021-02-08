@@ -88,4 +88,8 @@ player1Reset.addEventListener("click", () => {
     player2Box.classList.add("invisible");
     playerResetButtonShow.classList.add("invisible");
     player1Box.classList.add("invisible");
+
+    //showing the roll buttons again
+    player1Roll.classList.remove("invisible");
+    player2Roll.classList.remove("invisible");
 });
