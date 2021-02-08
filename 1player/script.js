@@ -61,3 +61,11 @@ player1Reset.addEventListener("click", () => {
     player1Roll.classList.remove("invisible");
     player2Roll.classList.remove("invisible");
 })
+
+//main page buttons
+const select1 = document.querySelector(".select1Player");
+const player1Box = document.querySelector(".player1Box");
+
+select1.addEventListener("click", () => {
+    player1Box.classList.remove("invisible");
+})
