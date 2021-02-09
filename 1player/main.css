@@ -106,6 +106,24 @@ body{
     margin-top: 10px;
     margin-right: 20px;
 }
+.diceroll{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -91px;
+    height: 120px;
+}
+.dicerollPlayer1{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -91px;
+    height: 120px;
+}
 .invisible{
     display:none;
 }
