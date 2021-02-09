@@ -19,6 +19,7 @@ body{
     justify-content: center;
     flex-direction: row;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 .player1Box{
     border: 10px solid #552626;
@@ -104,6 +105,24 @@ body{
 .select1Player{
     margin-top: 10px;
     margin-right: 20px;
+}
+.diceroll{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -91px;
+    height: 120px;
+}
+.dicerollPlayer1{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -91px;
+    height: 120px;
 }
 .invisible{
     display:none;

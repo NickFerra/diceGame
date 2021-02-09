@@ -8,24 +8,30 @@ var randNum2 = 0;
 
 // rolling the dice player1
 player1Roll.addEventListener("click", () => {
-
-        randNum += Math.floor(Math.random() * 6) +1;
+var diceRollNow = Math.floor(Math.random() * 6) +1;
+        randNum += diceRollNow;
         diceNum.textContent = randNum;
         
         if(randNum >= "21"){
             alert("Player ONE you have lost");
         }
+
+        document.querySelector("#diceImage").src = "img/dice" + diceRollNow + ".png";
+
 })
 
 // rolling the dice player2
 player2Roll.addEventListener("click", () => {
 
-    randNum2 += Math.floor(Math.random() * 6) +1;
+var diceRollNow2 =  Math.floor(Math.random() * 6) +1;
+    randNum2 += diceRollNow2;
     diceNum2.textContent = randNum2;
     
     if(randNum2 >= "21"){
         alert("Player TWO you have lost");
     }
+
+    document.querySelector("#diceImage").src = "img/dice" + diceRollNow2 + ".png";
 })
 
 //sorting the hold button
@@ -59,12 +65,15 @@ const player1Box = document.querySelector(".player1Box", ".invisible");
 const bigBox = document.querySelector(".bigBox", ".invisible");
 const playerSelector = document.querySelector(".playerSelector");
 const playerResetButtonShow = document.querySelector(".playerReset1", ".invisible")
+const diceRollImage = document.querySelector(".diceroll");
 
 select1.addEventListener("click", () => {
     player1Box.classList.remove("invisible");
     bigBox.classList.remove("invisible");
     playerResetButtonShow.classList.remove("invisible");
     playerSelector.classList.add("invisible");
+    diceRollImage.classList.add("dicerollPlayer1");
+    diceRollImage.classList.remove("diceroll");
 })
 
 //selecting two players
@@ -77,6 +86,8 @@ select2.addEventListener("click", () => {
     playerResetButtonShow.classList.remove("invisible");
     playerSelector.classList.add("invisible");
     player2Box.classList.remove("invisible");
+    diceRollImage.classList.remove("dicerollPlayer1");
+    diceRollImage.classList.add("diceroll");
 })
 
 //sorting reset button
