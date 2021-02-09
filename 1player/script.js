@@ -23,12 +23,15 @@ var diceRollNow = Math.floor(Math.random() * 6) +1;
 // rolling the dice player2
 player2Roll.addEventListener("click", () => {
 
-    randNum2 += Math.floor(Math.random() * 6) +1;
+var diceRollNow2 =  Math.floor(Math.random() * 6) +1;
+    randNum2 += diceRollNow2;
     diceNum2.textContent = randNum2;
     
     if(randNum2 >= "21"){
         alert("Player TWO you have lost");
     }
+
+    document.querySelector("#diceImage").src = "img/dice" + diceRollNow2 + ".png";
 })
 
 //sorting the hold button
